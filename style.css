@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Jua&display=swap');
+:root {
+  --dark-one-color: #3E8E7E;
+  --dark-two-color: #7CD1B8;
+  --light-color: #fffbef;
+  --light-one-color: #FAEDC6;
+  --light-two-color: #ffa200;
+  --color-black: rgba(51, 51, 51, 0.959);
+  --color-brown: rgba(124, 61, 2, 0.438);
+  --color-yellow: rgb(170, 137, 87);
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Chelsea Market', cursive;
+  background-color: var(--dark-two-color);
+  box-sizing: border-box;
+}
+.list-container {
+  background-color: var(--light-one-color);
+  border-radius: 8px;
+  width: 600px;
+  margin: 10vh auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 20px -3px rgba(15, 9, 3, 0.616);
+}
+.list-container .list-title {
+  font-size: 2.2em;
+  color: var(--light-two-color);
+}
+.list-container .list-ul {
+  width: 82%;
+  list-style: none;
+  margin: .6em 0 .8em;
+  padding: 0;
+  font-family: 'Jua', sans-serif;
+}
+.list-container .list-ul .list {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.list-container .list-ul .checked>div{
+  text-decoration: line-through;
+  color: var(--light-two-color);
+}
+.list-container .item-name {
+  width: 80%;
+}
+.list-container .item-price {
+  width: 20%;
+  text-align: right;
+}
+.list-container .delete {
+  cursor: pointer;
+  margin-left: 15px;
+  transition: .2s;
+}
+.list-container .delete:hover {
+  color: var(--light-two-color);
+}
+.list-container .data-input {
+  color: var(--color-black);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 23px;
+}
+.list-container .data-input input,
+.list-container .data-input .input-btn {
+  margin-right: 15px;
+}
+.list-container .data-input input {
+  padding: 0 8px;
+  width: 30%;
+  height: 100%;
+  background-color: var(--light-color);
+  font-size: 16px;
+  border-radius: 6px;
+  margin-left: 5px;
+  border: none;
+}
+.list-container .data-input input:focus {
+  outline: none;
+}
+.list-container .data-input .input-btn {
+  color: var(--dark-one-color);
+  background: none;
+  border: none;
+  margin: 0;
+  margin-right: 0;
+  cursor: pointer;
+  transition: .2s;
+  font-size: 28px;
+}
+.list-container .data-input .input-btn:hover {
+  transform: scale(1.2);
+}
+.list-container .horizontal-line1 {
+  width: 90%;
+  height: 1px;
+  margin: 15px 0;
+  background-color: var(--color-brown);
+}
+.list-container .horizontal-line2 {
+  width: 90%;
+  height: 1px;
+  margin: 10px 0;
+  background-color: var(--color-brown);
+}
+
+.list-container .result {
+  margin: .3em 0 1.8em;
+  width: 85%;
+}
+
+.list-container .result .result-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3px;
+}
+.list-container .result-item div:nth-child(2) {
+  font-family: 'Jua', sans-serif;
+}

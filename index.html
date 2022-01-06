@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="./src/main.js" defer></script>
+  <title>Shopping List</title>
+</head>
+<body>
+  <!-- 쇼핑 리스트 컨테이너 -->
+  <section class="list-container">
+    <!-- 리스트 제목 -->
+    <h1 class="list-title">Shopping List</h1>
+    <!-- 데이터 입력창 -->
+    <form class="input-form">
+      <div class="data-input">
+        Item: <input type="text" id="inputItem" />
+        Price: <input type="number" id="inputPrice"/>
+        <button type="submit" class="input-btn material-icons">add_box</button>
+      </div>
+    </form>
+    <div class="horizontal-line1"></div>
+    <!-- 입력 데이터 보여지는 창 -->
+    <ul class="list-ul">
+    </ul>
+    <div class="horizontal-line2"></div>
+    <!-- 결과값 출력 부분 -->
+    <footer class="result">
+      <div class="result-item">
+        <div>Checked: </div>
+        <div class="checked-price">0 원</div>
+      </div>
+      <div class="result-item">
+        <div>Unchecked:</div>
+        <div class="unchecked-price">0 원</div>
+      </div>
+      <div class="result-item">
+        <div>Total: </div>
+        <div class="total-price">0 원</div>
+      </div>
+    </footer>
+  </section>
+</body>
+</html>
